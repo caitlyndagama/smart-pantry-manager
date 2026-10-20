@@ -6,6 +6,10 @@ android {
     namespace = "com.smartpantrymanager"
     compileSdk {
         version = release(37)
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
+        }
     }
 
     defaultConfig {
@@ -39,4 +43,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
+    // HTTP client and JSON converter for the Supabase REST API
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }
