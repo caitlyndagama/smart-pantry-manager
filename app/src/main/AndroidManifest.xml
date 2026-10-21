@@ -32,14 +32,14 @@
 
         <!-- Screen 3: top-level (bottom navigation) -->
         <activity
-            android:name=".activities.SuggestedRecipesActivity"
+            android:name=".activities.SuggestRecipesActivity"
             android:exported="false" />
 
         <!-- Screen 4: child of suggested recipes -->
         <activity
             android:name=".activities.RecipeDetailActivity"
             android:exported="false"
-            android:parentActivityName=".activities.SuggestedRecipesActivity" />
+            android:parentActivityName=".activities.SuggestRecipesActivity" />
 
         <!-- Screen 5: top-level (bottom navigation) -->
         <activity

@@ -1,3 +1,83 @@
 <resources>
-    <string name="app_name">SmartPantryManager</string>
+    <string name="app_name">Smart Pantry Manager</string>
+    <!-- Screen titles -->
+    <string name="title_pantry">My pantry</string>
+    <string name="title_add_ingredient">Add ingredient</string>
+    <string name="title_edit_ingredient">Edit ingredient</string>
+    <string name="title_recipes">You can cook</string>
+    <string name="title_settings">Settings</string>
+    <!-- Bottom navigation -->
+    <string name="nav_pantry">Pantry</string>
+    <string name="nav_recipes">Recipes</string>
+    <string name="nav_settings">Settings</string>
+    <!-- Pantry list -->
+    <string name="pantry_empty">Your pantry is empty.\nTap + to add your first ingredient.</string>
+    <string name="retry">Retry</string>
+    <string name="cd_add_ingredient">Add ingredient</string>
+    <string name="cd_back">Back</string>
+    <string name="badge_expired">Expired</string>
+    <string name="badge_expires_today">Expires today</string>
+    <plurals name="badge_expires_in">
+        <item quantity="one">Expires in %d day</item>
+        <item quantity="other">Expires in %d days</item>
+    </plurals>
+    <!-- Add / edit form -->
+    <string name="hint_name">Ingredient name</string>
+    <string name="helper_name">For example: Tomatoes</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_unit">Unit</string>
+    <string name="hint_expiry">Expiry date (optional)</string>
+    <string name="cd_clear_expiry">Clear expiry date</string>
+    <string name="button_save">Save ingredient</string>
+    <string name="button_delete">Delete ingredient</string>
+    <string name="saved">Ingredient saved</string>
+    <string name="deleted">Ingredient deleted</string>
+    <string name="delete_title">Delete ingredient?</string>
+    <string name="delete_message">%1$s will be removed from your pantry.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <!-- Validation errors -->
+    <string name="error_name_required">Enter an ingredient name</string>
+    <string name="error_name_letters">Use letters, spaces and hyphens only</string>
+    <string name="error_name_long">Keep the name under 40 characters</string>
+    <string name="error_quantity_required">Enter a quantity</string>
+    <string name="error_quantity_number">Enter a number, such as 2 or 0.5</string>
+    <string name="error_quantity_positive">Quantity must be more than 0</string>
+    <string name="error_quantity_large">Quantity is too large</string>
+    <string name="error_unit">Choose a unit from the list</string>
+    <!-- Suggested recipes -->
+    <plurals name="recipes_match">
+        <item quantity="one">%d recipe matches your pantry</item>
+        <item quantity="other">%d recipes match your pantry</item>
+    </plurals>
+    <string name="empty_recipes_title">No recipes match your pantry yet</string>
+    <string name="empty_recipes_body">Add more ingredients and recipes you can cook will appear here.</string>
+    <string name="button_add_ingredients">Add ingredients</string>
+    <string name="almost_there_heading">Almost there: missing 1 ingredient</string>
+    <string name="almost_there_note">Not included in your suggestions above.</string>
+    <string name="missing_prefix">Missing: %1$s</string>
+    <plurals name="ingredient_count">
+        <item quantity="one">%d ingredient</item>
+        <item quantity="other">%d ingredients</item>
+    </plurals>
+    <string name="recipe_meta">%1$s · %2$d min</string>
+    <!-- Recipe detail -->
+    <string name="heading_ingredients">Ingredients</string>
+    <string name="heading_method">Method</string>
+    <string name="prep_time">Ready in %d minutes</string>
+    <string name="have_amount"> %1$s: %2$s (you have %3$s)</string>✓
+    <string name="missing_amount"> %1$s: %2$s (not enough in your pantry)</string>✗
+    <!-- Settings -->
+    <string name="section_alerts">Expiry alerts</string>
+    <string name="setting_expiry_alerts">Show expiring-soon labels on my pantry</string>
+    <string name="hint_warning_days">Warn me this many days before</string>
+    <string name="section_matching">Recipe matching</string>
+    <string name="setting_exclude_expired">Ignore expired ingredients when suggesting recipes</string>
+    <string name="section_about">About</string>
+    <string name="about_text">Smart Pantry Manager 1.0\nData is stored in PostgreSQL (Supabase).</string>
+    <string-array name="warning_day_labels">
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>7 days</item>
+    </string-array>
 </resources>

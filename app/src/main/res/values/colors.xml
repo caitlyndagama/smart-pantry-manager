@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="pantry_green">#2E7D32</color>
+    <color name="pantry_green_dark">#1B5E20</color>
+    <color name="pantry_green_light">#E8F5E9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="screen_background">#FAFAFA</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="warning_amber_bg">#FFF3E0</color>
+    <color name="warning_amber_text">#B45309</color>
+    <color name="alert_red_bg">#FFEBEE</color>
+    <color name="alert_red">#C62828</color>
 </resources>
