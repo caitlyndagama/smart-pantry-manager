@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".activities.SuggestRecipesActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarRecipes"
+        style="@style/PantryToolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/title_recipes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollRecipes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRecipes"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_m"
+            android:paddingBottom="@dimen/spacing_m">
+            <TextView
+                android:id="@+id/textMatchSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_s"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                tools:text="2 recipes match your pantry" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSuggested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_recipe" />
+            <LinearLayout
+                android:id="@+id/layoutRecipesEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_l"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="@dimen/empty_icon_size"
+                    android:layout_height="@dimen/empty_icon_size"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_recipes"
+                    app:tint="@color/text_secondary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/empty_recipes_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:gravity="center"
+                    android:text="@string/empty_recipes_body"
+                    android:textColor="@color/text_secondary" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonAddIngredients"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/button_add_ingredients" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutAlmostThere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_l"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_m"
+                    android:layout_marginEnd="@dimen/spacing_m" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_m"
+                    android:layout_marginEnd="@dimen/spacing_m"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/almost_there_heading"
+                    android:textColor="@color/warning_amber_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_m"
+                    android:layout_marginEnd="@dimen/spacing_m"
+                    android:layout_marginBottom="@dimen/spacing_s"
+                    android:text="@string/almost_there_note"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerAlmostThere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/progressRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRecipes"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:id="@+id/layoutRecipesError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_l"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRecipes"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/textRecipesError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRecipesRetry"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:text="@string/retry" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
