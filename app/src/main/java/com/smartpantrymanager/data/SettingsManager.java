@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.data;
+package com.smartpantrymanager.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.adapters;
+package com.smartpantrymanager.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.logic.RecipeMatcher;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.Recipe;
-import com.smartpantrymanager.activities.model.RecipeIngredient;
+import com.smartpantrymanager.logic.RecipeMatcher;
+import com.smartpantrymanager.logic.UnitConverter;
+import com.smartpantrymanager.model.Recipe;
+import com.smartpantrymanager.model.RecipeIngredient;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

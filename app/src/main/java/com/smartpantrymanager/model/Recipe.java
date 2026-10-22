@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.model;
+package com.smartpantrymanager.model;
 
 import com.google.gson.annotations.SerializedName;
 

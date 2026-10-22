@@ -1,8 +1,8 @@
-package com.smartpantrymanager.activities.logic;
+package com.smartpantrymanager.logic;
 
-import com.smartpantrymanager.activities.model.PantryItem;
-import com.smartpantrymanager.activities.model.Recipe;
-import com.smartpantrymanager.activities.model.RecipeIngredient;
+import com.smartpantrymanager.model.PantryItem;
+import com.smartpantrymanager.model.Recipe;
+import com.smartpantrymanager.model.RecipeIngredient;
 
 import java.util.ArrayList;
 import java.util.Calendar;

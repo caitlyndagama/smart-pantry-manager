@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.activities;
+package com.smartpantrymanager.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,12 +13,12 @@ import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.adapters.RecipeAdapter;
-import com.smartpantrymanager.activities.data.PantryRepository;
-import com.smartpantrymanager.activities.data.SettingsManager;
-import com.smartpantrymanager.activities.logic.RecipeMatcher;
-import com.smartpantrymanager.activities.model.PantryItem;
-import com.smartpantrymanager.activities.model.Recipe;
+import com.smartpantrymanager.adapters.RecipeAdapter;
+import com.smartpantrymanager.data.PantryRepository;
+import com.smartpantrymanager.data.SettingsManager;
+import com.smartpantrymanager.logic.RecipeMatcher;
+import com.smartpantrymanager.model.PantryItem;
+import com.smartpantrymanager.model.Recipe;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.Calendar;
 import java.util.List;

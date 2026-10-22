@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.adapters;
+package com.smartpantrymanager.adapters;
 
 import com.smartpantrymanager.R;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
-import com.smartpantrymanager.activities.logic.ExpiryUtils;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.PantryItem;
+import com.smartpantrymanager.logic.ExpiryUtils;
+import com.smartpantrymanager.logic.UnitConverter;
+import com.smartpantrymanager.model.PantryItem;
 import java.util.ArrayList;
 import java.util.List;
 

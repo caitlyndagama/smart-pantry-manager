@@ -2,8 +2,6 @@ package com.smartpantrymanager.logic;
 
 import static org.junit.Assert.assertEquals;
 
-import com.smartpantrymanager.activities.logic.IngredientNormaliser;
-
 import org.junit.Test;
 
 public class IngredientNormaliserTest {

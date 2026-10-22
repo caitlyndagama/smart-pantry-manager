@@ -1,6 +1,4 @@
-package com.smartpantrymanager.activities.activities;
-
-import static android.provider.Settings.System.getString;
+package com.smartpantrymanager.activities;
 
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -13,13 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.NestedScrollView;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.data.PantryRepository;
-import com.smartpantrymanager.activities.data.SettingsManager;
-import com.smartpantrymanager.activities.logic.RecipeMatcher;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.PantryItem;
-import com.smartpantrymanager.activities.model.Recipe;
-import com.smartpantrymanager.activities.model.RecipeIngredient;
+import com.smartpantrymanager.data.PantryRepository;
+import com.smartpantrymanager.data.SettingsManager;
+import com.smartpantrymanager.logic.RecipeMatcher;
+import com.smartpantrymanager.logic.UnitConverter;
+import com.smartpantrymanager.model.PantryItem;
+import com.smartpantrymanager.model.Recipe;
+import com.smartpantrymanager.model.RecipeIngredient;
 import com.google.android.material.appbar.MaterialToolbar;
 import java.util.Calendar;
 import java.util.HashMap;

@@ -1,12 +1,12 @@
-package com.smartpantrymanager.activities.data;
+package com.smartpantrymanager.data;
 
 import android.util.Log;
 
-import com.smartpantrymanager.activities.logic.IngredientNormaliser;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.Ingredient;
-import com.smartpantrymanager.activities.model.PantryItem;
-import com.smartpantrymanager.activities.model.Recipe;
+import com.smartpantrymanager.logic.IngredientNormaliser;
+import com.smartpantrymanager.logic.UnitConverter;
+import com.smartpantrymanager.model.Ingredient;
+import com.smartpantrymanager.model.PantryItem;
+import com.smartpantrymanager.model.Recipe;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;

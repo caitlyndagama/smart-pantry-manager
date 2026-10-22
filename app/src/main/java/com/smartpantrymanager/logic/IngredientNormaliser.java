@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.logic;
+package com.smartpantrymanager.logic;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.activities;
+package com.smartpantrymanager.activities;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,10 +1,10 @@
-package com.smartpantrymanager.activities.activities;
+package com.smartpantrymanager.activities;
 
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.data.SettingsManager;
+import com.smartpantrymanager.data.SettingsManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;

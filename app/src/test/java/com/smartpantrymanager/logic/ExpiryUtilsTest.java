@@ -1,7 +1,7 @@
 package com.smartpantrymanager.logic;
 
 import static org.junit.Assert.assertEquals;
-import com.smartpantrymanager.activities.logic.ExpiryUtils;
+
 import org.junit.Test;
 import java.util.Calendar;
 

@@ -4,8 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import com.smartpantrymanager.activities.logic.UnitConverter;
-
 import org.junit.Test;
 
 public class UnitConverterTest {

@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.data;
+package com.smartpantrymanager.data;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

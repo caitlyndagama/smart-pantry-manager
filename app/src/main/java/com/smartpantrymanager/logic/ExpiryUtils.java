@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.logic;
+package com.smartpantrymanager.logic;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

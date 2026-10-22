@@ -1,4 +1,4 @@
-package com.smartpantrymanager.activities.activities;
+package com.smartpantrymanager.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.adapters.PantryAdapter;
-import com.smartpantrymanager.activities.data.PantryRepository;
-import com.smartpantrymanager.activities.data.SettingsManager;
-import com.smartpantrymanager.activities.model.PantryItem;
+import com.smartpantrymanager.adapters.PantryAdapter;
+import com.smartpantrymanager.data.PantryRepository;
+import com.smartpantrymanager.data.SettingsManager;
+import com.smartpantrymanager.model.PantryItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -40,6 +40,7 @@ public class PantryListActivity extends AppCompatActivity{
         repository = new PantryRepository();
         settings = new SettingsManager(this);
         RecyclerView recyclerPantry = findViewById(R.id.recyclerPantry);
+        adapter = new PantryAdapter(this::onItemClick);
         progressPantry = findViewById(R.id.progressPantry);
         layoutPantryMessage = findViewById(R.id.layoutPantryMessage);
         textPantryMessage = findViewById(R.id.textPantryMessage);

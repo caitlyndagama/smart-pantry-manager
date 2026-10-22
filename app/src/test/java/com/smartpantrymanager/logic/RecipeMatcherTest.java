@@ -4,11 +4,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import com.smartpantrymanager.activities.logic.RecipeMatcher;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.PantryItem;
-import com.smartpantrymanager.activities.model.Recipe;
-import com.smartpantrymanager.activities.model.RecipeIngredient;
+import com.smartpantrymanager.model.PantryItem;
+import com.smartpantrymanager.model.Recipe;
+import com.smartpantrymanager.model.RecipeIngredient;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.ArrayList;

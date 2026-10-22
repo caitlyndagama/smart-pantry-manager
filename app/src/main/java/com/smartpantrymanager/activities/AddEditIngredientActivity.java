@@ -1,7 +1,4 @@
-package com.smartpantrymanager.activities.activities;
-
-import static android.content.Intent.getIntent;
-import static android.provider.Settings.System.getString;
+package com.smartpantrymanager.activities;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -13,10 +10,10 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import com.smartpantrymanager.R;
-import com.smartpantrymanager.activities.data.PantryRepository;
-import com.smartpantrymanager.activities.logic.ExpiryUtils;
-import com.smartpantrymanager.activities.logic.UnitConverter;
-import com.smartpantrymanager.activities.model.PantryItem;
+import com.smartpantrymanager.data.PantryRepository;
+import com.smartpantrymanager.logic.ExpiryUtils;
+import com.smartpantrymanager.logic.UnitConverter;
+import com.smartpantrymanager.model.PantryItem;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
